@@ -1,0 +1,38 @@
+project/
+│
+├── db/
+│   ├── config.js
+│   └── connection.js
+│
+├── redis/
+│   └── redisClient.js
+│
+├── cron/
+│   └── job.js
+│
+├── src/
+│   ├── models/
+│   │   ├── userModel.js
+│   │   ├── courseModel.js
+│   │   └── index.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── userController.js
+│   │   └── courseController.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── userRoutes.js
+│   │   ├── courseRoutes.js
+│   │   └── index.js
+│   ├── validators/
+│   │   ├── authValidators.js
+│   │   ├── userValidators.js
+│   │   ├── courseValidators.js
+│   │   └── validate.js
+│   └── middleware/
+│       └── authMiddleware.js
+│
+├── .env
+├── .gitignore
+├── index.js
+├── package.json

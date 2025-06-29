@@ -1,0 +1,22 @@
+{
+  "name": "node_js_bakend",
+  "version": "1.0.0",
+  "description": "This project only for the API using node and express",
+  "license": "ISC",
+  "author": "Ashish Thakur (oder_1)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "nodemon": "^3.1.10",
+    "passport": "^0.7.0"
+  }
+}

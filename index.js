@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-
+import sequelize from './db/connection.js';
 
 
 dotenv.config();
@@ -15,8 +15,8 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT;
 
 
-app.listen(PORT, () => {
+sequelize.sync().then(() => {
+    console.log("Database connected succesfully!!");
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+})
 
-    console.log(`Server is Runing at ${PORT}`);
-
-});

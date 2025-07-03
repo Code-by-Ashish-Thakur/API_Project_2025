@@ -15,6 +15,11 @@ app.use(cookieParser());
 
 app.use('/api/v1', routes); // All endpoints start with /api/v1
 
+app.get("/", (req, res) => {
+    res.send("API is working fine 🔥");
+});
+
+
 const PORT = process.env.PORT || 3000;
 
 // Connect DB, start server, connect Redis, start Cron
